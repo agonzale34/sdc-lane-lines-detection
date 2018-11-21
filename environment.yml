@@ -1,4 +1,4 @@
-name: scarnd-term1
+name: sdc-cpu-t1
 channels:
     - https://conda.anaconda.org/menpo
     - conda-forge
