@@ -32,13 +32,10 @@ at the end of the pipeline I return the overlap image.
 
 
 ## Test images
+![alt text][result_images/result2.png]
 
 
-
-![alt text][image1]
-
-
-### - Identify potential shortcomings with your current pipeline
+## - Potential shortcomings with my pipeline
 
 
 One potential shortcoming would be what would happen when ... 
@@ -46,7 +43,7 @@ One potential shortcoming would be what would happen when ...
 Another shortcoming could be ...
 
 
-### - Suggest possible improvements to your pipeline
+### - Possible improvements to my pipeline
 
 A possible improvement would be to ...
 
