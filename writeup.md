@@ -32,7 +32,7 @@ at the end of the pipeline I return the overlap image.
 
 
 ## Test images
-![alt text][result_images/result2.png]
+![results](result_images/result2.png)
 
 
 ## - Potential shortcomings with my pipeline
