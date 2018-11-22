@@ -28,7 +28,7 @@ I calculate the initial y final points for the final lane line using the equatio
 
 
 #### 6. Overlay the original image with the final lines
-at the end of the pipeline I return the overlap image.
+At the end of the pipeline I return the overlap image that combine the original with the final lines.
 
 
 ## Test images
@@ -36,15 +36,13 @@ at the end of the pipeline I return the overlap image.
 
 
 ## - Potential shortcomings with my pipeline
+One potential shortcoming would be what would happen when the lines on the road have minimal difference because the canny transform can't detect edges  
 
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+Another shortcoming could be if there is a car in front with a small distance (inside the region of interest) in these case the draw lines function will mess up the average of each lane line.
 
 
 ### - Possible improvements to my pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to apply better color filters at the input image in order to get better edges detection.
 
-Another potential improvement could be to ...
+Another potential improvement could be to tweak more the parameter for better performance.
