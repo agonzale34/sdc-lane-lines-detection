@@ -1,9 +1,7 @@
 **Finding Lane Lines on the Road** 
 ---
 
-### - My pipeline.
-
-My pipeline consisted of 6 steps. 
+### - My pipeline:
 
 #### 1.  Pre-process the input image:
 
@@ -19,7 +17,7 @@ I use the dimension of the image to calculate the vertices of polygon.
 I block out all the edges that outside the polygon using the function fillPoly of OpenCV library.
 
 #### 4. Get lines from the edges:
-To get lines from the edges I use the Hough transformation algorithm, these lines are the key de identify the lane lines.
+To get lines from the edges I use the Hough transformation algorithm, these lines are the key to identify the lane lines.
 
 #### 5. Identify the lane lines: 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by 
@@ -35,14 +33,14 @@ At the end of the pipeline I return the overlap image that combine the original 
 ![results](result_images/result2.png)
 
 
-## - Potential shortcomings with my pipeline
-One potential shortcoming would be what would happen when the lines on the road have minimal difference because the canny transform can't detect edges  
+## Potential shortcomings with my pipeline
+One potential shortcoming would be the case when the lines on the road have minimal difference because the canny transform can't detect edges  
 
-Another shortcoming could be if there is a car in front with a small distance (inside the region of interest) in these case the draw lines function will mess up the average of each lane line.
+Another shortcoming could be if there is a car close enough of the camera (inside the region of interest) in these case the draw lines function will mess up the average of each lane line.
 
 
-### - Possible improvements to my pipeline
+### Possible improvements to my pipeline
 
 A possible improvement would be to apply better color filters at the input image in order to get better edges detection.
 
-Another potential improvement could be to tweak more the parameter for better performance.
+Another potential improvement could be to tweak the parameters for better performance.
